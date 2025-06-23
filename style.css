@@ -1,27 +1,39 @@
 body {
   font-family: Arial, sans-serif;
   background: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
 
+/* Title */
 .div1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   color: green;
 }
 
-.div2 {
-  display: flex;
-  justify-content: center;
+/* Common container for form + list */
+.container {
+  width: 360px; /* Fixed width */
+  margin: 0 auto; /* Center horizontally */
   margin-top: 20px;
 }
 
+/* Form */
+form {
+  display: flex;
+  width: 100%;
+}
+
+/* Input box */
 #input-id {
   padding: 10px;
-  width: 300px;
+  flex: 1;
   border: 2px solid black;
   border-radius: 15px;
 }
 
+/* Add button */
 button {
   padding: 10px 15px;
   margin-left: 10px;
@@ -36,33 +48,34 @@ button:hover {
   background-color: darkgreen;
 }
 
-.div3 {
-  display: flex;
-  justify-content: center;
+/* Task list */
+#list-id {
+  list-style-type: none;
+  padding: 0;
   margin-top: 20px;
 }
 
 #list-id li {
-  border: 1px solid #ccc;
-  padding: 12px 16px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  width: 300px;
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
 }
 
+/* Completed task style */
 .completed {
   text-decoration: line-through;
   color: gray;
   opacity: 0.7;
 }
 
-/* Modal Styles */
+/* Modal styles */
 .modal {
   position: fixed;
   top: 0;
